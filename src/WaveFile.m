@@ -1,6 +1,9 @@
 %{
 This file defines a WaveFile Object. We will store our data, filepath, etc.
 as well as define our function manipulations here.
+
+ref:
+https://www.mathworks.com/products/matlab/object-oriented-programming.html
 %}
 
 %{
@@ -28,6 +31,7 @@ classdef WaveFile
         %}
         function obj = WaveFile(filePath)
 
+            %ref: https://www.youtube.com/watch?v=2kvemW3W1Vk
             obj.filePath = filePath;
             [obj.timeData, obj.fs] = audioread(obj.filePath);
             obj.freqData = fft(obj.timeData);
@@ -40,7 +44,6 @@ classdef WaveFile
 
             clear sound;
             % play audio
-            [obj.timeData, obj.fs] = audioread(obj.filePath);
             sound(obj.timeData, obj.fs); % Adjust sampling rate as needed
         end
 
@@ -51,16 +54,19 @@ classdef WaveFile
 
             %ref: https://www.mathworks.com/matlabcentral/answers/348355-how-do-i-limit-the-values-in-an-array
 
+            obj.timeData = obj.timeData*amplitudeScale;
             obj.freqData = obj.freqData*amplitudeScale;
-
-            % Make sure absolute value of amplitudes is max 1 to comply
+            %{
+            Make sure absolute value of amplitudes is max 1 to comply
             % with wav file standards.
-            obj.freqData = max(min(obj.freqData, 1), -1);
+            %}                       
+            obj.timeData = max(min(obj.timeData, 1), -1);
+            obj.freqData = fft(obj.timeData);
         end
     end
     
     methods(Static)
-        
+
         %{
         Method to stop playing audio
         %}
