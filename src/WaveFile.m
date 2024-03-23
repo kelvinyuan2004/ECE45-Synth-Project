@@ -15,6 +15,7 @@ audioData - array storing amplitudes
 fs - sampling rate
 %}
 classdef WaveFile
+    
     properties
         filePath
         timeData
@@ -35,42 +36,6 @@ classdef WaveFile
             obj.filePath = filePath;
             [obj.timeData, obj.fs] = audioread(obj.filePath);
             obj.freqData = fft(obj.timeData);
-        end
-        
-        %{
-        Method to play the current audio
-        %}
-        function play(obj)
-
-            clear sound;
-            % play audio
-            sound(obj.timeData, obj.fs); % Adjust sampling rate as needed
-        end
-
-        %{
-        Method to play the current audio
-        %}
-        function obj = changeAmplitude(obj, amplitudeScale)
-
-            % ref: https://www.mathworks.com/matlabcentral/answers/348355-how-do-i-limit-the-values-in-an-array
-
-            obj.timeData = obj.freqData*amplitudeScale;
-            obj.freqData = fft(obj.timeData);
-
-            % limit the time domain data amplitude to comply with wav
-            % standards
-            obj.timeData = max(min(obj.timeData, 1), -1);
-        end
-    end
-    
-    methods(Static)
-
-        %{
-        Method to stop playing audio
-        %}
-        function stop()
-
-            clear sound;
         end
     end
 end
