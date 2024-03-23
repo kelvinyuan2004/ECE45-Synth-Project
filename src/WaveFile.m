@@ -52,16 +52,14 @@ classdef WaveFile
         %}
         function obj = changeAmplitude(obj, amplitudeScale)
 
-            %ref: https://www.mathworks.com/matlabcentral/answers/348355-how-do-i-limit-the-values-in-an-array
+            % ref: https://www.mathworks.com/matlabcentral/answers/348355-how-do-i-limit-the-values-in-an-array
 
-            obj.timeData = obj.timeData*amplitudeScale;
-            obj.freqData = obj.freqData*amplitudeScale;
-            %{
-            Make sure absolute value of amplitudes is max 1 to comply
-            % with wav file standards.
-            %}                       
-            obj.timeData = max(min(obj.timeData, 1), -1);
+            obj.timeData = obj.freqData*amplitudeScale;
             obj.freqData = fft(obj.timeData);
+
+            % limit the time domain data amplitude to comply with wav
+            % standards
+            obj.timeData = max(min(obj.timeData, 1), -1);
         end
     end
     
