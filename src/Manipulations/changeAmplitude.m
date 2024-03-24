@@ -8,7 +8,7 @@ Method to change the amplitude of a wav file object
 muting the audio, 2 being doubling the audio.
 %}
 function obj = changeAmplitude(obj, amplitudeScale)
-
+    disp(size(obj.timeData));
     obj.timeData = obj.timeData * amplitudeScale;
 
     % alternatively, could do obj.freqData *= amplitudeScale (should follow
