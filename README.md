@@ -13,4 +13,3 @@ Run "SYNTH.mlapp"<br>
 <br>
 <br>Import sound to select wav file on computer (or use sample sounds from "imported sounds folder")
 <br>"Play" to play the audio, "Stop" to stop the audio.
-
