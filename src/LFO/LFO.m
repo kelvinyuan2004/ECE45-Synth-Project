@@ -1,21 +1,21 @@
-function [LFO_signal, time] = LFO(wave_period, wave_type, duration, sampling_rate)
+function [LFO_signal, time] = LFO(freq, waveform, duration, fs)
            %time vector
            %duration of the LFO signal in s
-            period = 2*pi*(1/wave_period);
-            time = linspace(0, duration, sampling_rate * duration);
-            waveform = wave_type;
+            period = 2*pi*(freq);
+            time = linspace(0, duration, fs * duration);
+            
             switch waveform
                 case 'sin_wave'
-                    output_wave_time_domain = sin(period * time);
+                    LFO_signal = sin(period * time);
                 case 'sawtooth_wave'
-                    output_wave_time_domain = sawtooth(period * time);
+                    LFO_signal = generateSawtoothOscillator(1, freq, duration, fs);
                 case 'square_wave'
-                    output_wave_time_domain = square(period * time);
+                    LFO_signal = square(period * time);
                 case 'triangle'
-                    output_wave_time_domain = triangle(period * time, 0.5);
+                    LFO_signal = triangle(period * time, 0.5);
                 outerwise
                     error('invalid waveform !');
             end        
                 %% evelope_amount is the envelope function that take parameter of time(seconds that u want to envelope)
-                LFO_signal = output_wave_time_domain .* envelope_amount(time);%%make sure the names are the same for waveform
+                LFO_signal;
         end
