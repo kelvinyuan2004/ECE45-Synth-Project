@@ -14,7 +14,7 @@
 
 function envelope = generateEnvelope(duration, attack, decay, sustain, release, fs)
     
-    totalSamples = duration * fs;
+    totalSamples = floor(duration * fs);
     envelope = zeros(totalSamples, 1);
     
     % get length (in samples) of each portion
@@ -30,7 +30,7 @@ function envelope = generateEnvelope(duration, attack, decay, sustain, release, 
     envelope(attackSamples : attackSamples + decaySamples) = linspace(1, sustain/100, decaySamples+1);
     
     % SUSTAIN decay
-    envelope((attackSamples + decaySamples): (end - releaseSamples)) = sustain/100;
+    envelope((attackSamples + decaySamples): (end - releaseSamples+1)) = sustain/100;
     
     % release
     envelope(end - releaseSamples:end) = linspace(sustain / 100, 0, releaseSamples+1);
