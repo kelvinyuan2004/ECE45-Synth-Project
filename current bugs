@@ -1,2 +1,3 @@
 Not import sound -> pressing play/pause causes error
 Pressing import sound -> closing window causes error
+ADSR generator sliders cannot go to 0.
