@@ -3,11 +3,15 @@ Overview:
 This is our ECE45 project. The program will be written using MATLAB and will be using the MATLAB GUI as well.
 
 ## Contributers and Contributions:
-// The readme file just update on ur own with your relevant 
+// The readme file just update on ur own with your relevant <br>
 Kelvin Yuan, A18140796: (Everything you did)
+
 Zhenyu Jiang, A(numbers lol): (Everything you did)
+
 Henry Tran, A17685681: Updated the README file and worked on building the low pass filter
+
 Rong Chen, A18083454:(everything you did)
+
 Everyone else.(I just dont know who else is working on project): (Everything you did)
 
 ## Writeup:
