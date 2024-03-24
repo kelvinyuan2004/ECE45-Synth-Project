@@ -1,4 +1,4 @@
-function [Lfo_signal, time] = LFO(wave_period,wave_type, duration,sampling_rate)
+function [LFO_signal, time] = LFO(wave_period, wave_type, duration, sampling_rate)
            %time vector
            %duration of the LFO signal in s
             period = 2*pi*(1/wave_period);
@@ -17,5 +17,5 @@ function [Lfo_signal, time] = LFO(wave_period,wave_type, duration,sampling_rate)
                     error('invalid waveform !');
             end        
                 %% evelope_amount is the envelope function that take parameter of time(seconds that u want to envelope)
-                Lfo_signal = output_wave_time_domain .* envelope_amount(time);%%make sure the names are the same for waveform
+                LFO_signal = output_wave_time_domain .* envelope_amount(time);%%make sure the names are the same for waveform
         end
