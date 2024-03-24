@@ -14,7 +14,7 @@ function obj = changeAmplitude(obj, amplitudeScale)
     % alternatively, could do obj.freqData *= amplitudeScale (should follow
     % fourier transform properties) but minimize information loss from
     % rounding.
-    obj.freqData = fft(obj.timeData);
+    % obj.freqData = fft(obj.timeData);
 
     % limit the time domain data amplitude to comply with wav standards
     obj.timeData = max(min(obj.timeData, 1), -1);
