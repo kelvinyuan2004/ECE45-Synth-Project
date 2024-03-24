@@ -10,6 +10,7 @@ https://www.mathworks.com/help/matlab/ref/repmat.html
 @param freq - frequency of sawtooth wave (hz); OSCILLATOR SHOULD BE 1
 @param duration - duration (sec)
 @param fs - sampling frequency (hz)
+@return sawtooth wave with following parameters
 %}
 function sawtoothWave = generateSawtoothOscillator(amplitude, freq, duration, fs)
 
