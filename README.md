@@ -73,5 +73,5 @@ Press the triangle to play your new audio, and the square to stop and reset the 
 
 ## Helpful Tips:
 
-1) The ADSR envelope unfortunately does not work very well on longer files. To measure the manipulations in a more meanigful way, we recommended using a shorter file (5-20 secpmds)
+1) The ADSR envelope unfortunately does not work very well on longer files. To measure the manipulations in a more meanigful way, we recommended using a shorter file (5-20 seconds, sin_a4_5s.wav is a good choice)
 2) We HIGHLY advise against turning noise to any intensity greater than 5.
