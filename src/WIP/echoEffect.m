@@ -1,6 +1,6 @@
 %
 % *************************************************************************
-% * Daphne Chen PID A18081841                                             *
+% * Author: Daphne Chen PID A18081841                                     *
 % *************************************************************************
 % * Inputs:  inputSig        Vector (time-domain) to be processed         *
 % *          fs              sample rate                                  *
