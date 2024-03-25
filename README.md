@@ -1,4 +1,4 @@
-# Matlab Final Project for ECE45.
+# MATLAB Final Project for ECE45.
 Overview:
 This is our ECE45 project. The program will be written using MATLAB and will be using the MATLAB GUI as well.
 
