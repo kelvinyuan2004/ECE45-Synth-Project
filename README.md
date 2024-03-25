@@ -6,8 +6,10 @@ This is our ECE45 project. The program will be written using MATLAB and will be 
 
 Kelvin Yuan, A18140796:
 
-* Add function/what did
-  - description-ish
+* Worked on the GUI with Henry
+* Organized functions
+* Handled the final calculations before display
+* Worked on file handling and display
 
 Zhenyu Jiang, A18098929 (LFO generator):
 
