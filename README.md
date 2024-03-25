@@ -17,6 +17,7 @@ The function will generate the desired LFO signal (in the time domain) based on 
 
 Henry Tran, A17685681:
 
+* Worked on the GUI with Kelvin
 * Updated the README file to become more descriptive
 * Worked on updating the report with relevant information
 * Helped with identifying bugs with the app and contributed with debugging
