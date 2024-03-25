@@ -78,6 +78,6 @@ Press the triangle to play your new audio, and the square to stop and reset the 
 3) We HIGHLY advise against turning noise to any intensity greater than 5.
 
 ## Closing notes:
-
-Links to [SNSD Gee](https://www.youtube.com/watch?v=12OHeq-qYwI) (gee.wav)
-Links to [Vivaldi's Winter](https://www.youtube.com/watch?v=nGdFHJXciAQ)
+Here are links to two samples we included:<br>
+Link to [SNSD's Gee](https://www.youtube.com/watch?v=12OHeq-qYwI)(gee.wav)<br>
+Link to [Vivaldi's Winter](https://www.youtube.com/watch?v=nGdFHJXciAQ)<br>
