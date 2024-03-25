@@ -13,7 +13,8 @@
 % * Description:                                                          *
 % *                                                                       *
 % * This function takes a vector of samples in the time-domain and create *
-% * its echo based on the customize factors                               *
+% * its echo based on the customize factors. To test this fuction, use the*
+% * .wav files under 'imported sounds' folder as input.                   *
 % *************************************************************************
 function [outputEcho] = echoEffect(inputSig, fs, delayTime, echoDelay, intensity) %decayFactor
 
