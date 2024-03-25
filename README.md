@@ -41,7 +41,7 @@ Andrew Nguyen, A18073124:
 
 Daphne Chen, A18081841:
 
-* Echo Function
+* Echo Effect Function
   - Creates echo of an input signal(audio array, works with audio in .wav)
   - Users can specify the time distance between each echo and its intensity
 
