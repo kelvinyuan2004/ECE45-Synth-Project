@@ -55,7 +55,10 @@ Christopher Phan, A18066159:
 The writeup is located [here](https://docs.google.com/document/d/e/2PACX-1vQbeLiGtcSWIh8PIwu1w4pUH_zetZpARPXDrXkuVdp3Hq1xmoa-urR9AU4SDfVg0yl4pvSMpcZ1zmhr/pub). This will contain a more in detail version of all that is seen here in the README file.
 
 ## Instructions:
-Run "SYNTH.mlapp" by just openning it. If unable to import files this way, open the project in MATLAB, and add all files to the project path (right click -> add to project path -> all subfolders).
+The following will show the bare minimum into how to run the application and how to import sounds into the app as well. Please refer to the [writeup](https://docs.google.com/document/d/e/2PACX-1vQbeLiGtcSWIh8PIwu1w4pUH_zetZpARPXDrXkuVdp3Hq1xmoa-urR9AU4SDfVg0yl4pvSMpcZ1zmhr/pub) for more information and details into everything else about the app.
 
-Import sound to select wav file on computer (or use sample sounds from "imported sounds folder")
+
+1) Run "SYNTH.mlapp" by just openning it. If unable to import files this way, open the project in MATLAB, and add all files to the project path (right click -> add to project path -> all subfolders).
+
+2) Import sound to select wav file on computer (or use sample sounds from "imported sounds folder")
 "Play" to play the audio, "Stop" to stop the audio.
