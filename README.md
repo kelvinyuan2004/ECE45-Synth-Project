@@ -55,7 +55,22 @@ Christopher Phan, A18066159:
 The writeup is located [here](https://docs.google.com/document/d/e/2PACX-1vQbeLiGtcSWIh8PIwu1w4pUH_zetZpARPXDrXkuVdp3Hq1xmoa-urR9AU4SDfVg0yl4pvSMpcZ1zmhr/pub). This will contain a more in detail version of all that is seen here in the README file.
 
 ## Instructions:
-Run "SYNTH.mlapp" by just openning it. If unable to import files this way, open the project in MATLAB, and add all files to the project path (right click -> add to project path -> all subfolders).
+NOTE: REQUIRES MATLAB. Run "SYNTH.mlapp" by just executing it.
 
-Import sound to select wav file on computer (or use sample sounds from "imported sounds folder")
+Press "Import Sound" button to select a .wav file from your computer. There are some provided wav files under the "imported sounds" directory.
+IMPORTANT: If you are unable to upload the file (i.e. get an error):
+1) Open the project in MATLAB
+2) Select each folder in the explorer window for the project. Right Click -> "Add to Path" -> "Folder and Subfolders"
+
+Once the file is succesfully uploaded, you will be met with your waveform in the time and frequency domains, and you can freely apply various manipulations.
+The wave, represented in both domains, should be represented each time you perform a manipulation. Unfortunately, there are a few bugs we did not have time to patch out, especially with file handling and some edge cases of the ADSR generator. For more information, check the "current bugs" file.
+
+Press the triangle to play your new audio, and the square to stop and reset the audio to the beginning. NOTE: if you you are performing an operation while playing the audio, even though the graphs may have changed, you have to restart the playback to hear the new changes.
+
+## Helpful Tips:
+
+1) The ADSR envelope unfortunately does not work very well on longer files. To measure the manipulations in a more meanigful way, we recommended using a shorter file (5-20 secpmds)
+2) We HIGHLY advise against turning noise to any intensity greater than 5.
+
+
 "Play" to play the audio, "Stop" to stop the audio.
