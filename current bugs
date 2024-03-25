@@ -1,2 +1,4 @@
-Not import sound -> pressing play/pause causes error
 Pressing import sound -> closing window causes error
+Using any menu functions before importing sound causes errors.
+ADSR generator sliders has occasional bugs.
+Setting LFO to 0 Hz has unintended effects.

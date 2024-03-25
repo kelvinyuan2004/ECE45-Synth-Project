@@ -18,7 +18,7 @@ Everyone else.(I just dont know who else is working on project): (Everything you
 The writeup is located [here](https://docs.google.com/document/d/e/2PACX-1vQbeLiGtcSWIh8PIwu1w4pUH_zetZpARPXDrXkuVdp3Hq1xmoa-urR9AU4SDfVg0yl4pvSMpcZ1zmhr/pub). This will contain a more in detail version of all that is seen here in the README file.
 
 ## Instructions:
-Run "SYNTH.mlapp" by just openning it.
+Run "SYNTH.mlapp" by just openning it. If unable to import files this way, open the project in MATLAB, and add all files to the project path (right click -> add to project path -> all subfolders).
 
 Import sound to select wav file on computer (or use sample sounds from "imported sounds folder")
 "Play" to play the audio, "Stop" to stop the audio.
