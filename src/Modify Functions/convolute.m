@@ -5,8 +5,8 @@ ref: https://www.mathworks.com/help/matlab/ref/fft.html
 Note could use conv(), but might be more useful to store freq domain data
 as well.
 
-@param signal_1 - wav file object of first signal
-@param signal_2 - wav file object of second signal
+@param signal_1 - 2d wav file object of first signal (n x 2)
+@param signal_2 - 1d wav file object of second signal (1 x n)
 @return new wav file object containing new convoluted data
 %}
 function obj = convolute(signal_1, signal_2)

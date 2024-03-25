@@ -26,18 +26,24 @@ function envelope = generateEnvelope(duration, attack, decay, sustain, release, 
     % attack
     if attackSamples ~= 0
         envelope(1:attackSamples) = linspace(0, 1, attackSamples);
+    else
+        attackSamples = 1;
     end
     
     % decay
-    if attackSamples+decaySamples ~= 0
+    if attackSamples + decaySamples ~= 1
         envelope(attackSamples : attackSamples + decaySamples) = linspace(1, sustain/100, decaySamples+1);
     end
 
     % SUSTAIN decay
-    envelope((attackSamples + decaySamples): (end - releaseSamples+1)) = sustain/100;
-    
+    if totalSamples - (releaseSamples+1) ~= 0
+        envelope((attackSamples + decaySamples): (end - releaseSamples+1)) = sustain/100;
+    end
+
     % release
-    envelope(end - releaseSamples:end) = linspace(sustain / 100, 0, releaseSamples+1);
+    if totalSamples - (releaseSamples+1) ~= 0
+        envelope(end - releaseSamples:end) = linspace(sustain / 100, 0, releaseSamples+1);
+    end
 
     % temp fix for weird behavior
     envelope = envelope(1:totalSamples);
