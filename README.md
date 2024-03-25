@@ -79,5 +79,5 @@ Press the triangle to play your new audio, and the square to stop and reset the 
 
 ## Closing notes:
 Here are links to two samples we included:<br>
-Link to [SNSD's Gee](https://www.youtube.com/watch?v=12OHeq-qYwI)(gee.wav)<br>
+Link to [SNSD's Gee](https://www.youtube.com/watch?v=12OHeq-qYwI) (gee.wav)<br>
 Link to [Vivaldi's Winter](https://www.youtube.com/watch?v=nGdFHJXciAQ)<br>
