@@ -53,6 +53,19 @@ Christopher Phan, A18066159:
   - User provides a input, a noisy sample is generated and then de-noised
   - Can be used to clear up bad audio due to recording quality or environmental constraints
 
+Yunhui Hu, A18071009:
+
+* Frequency offset
+  - Solving frequency offset issues
+
+Yi Rong, A18064421:
+
+* Envelope generator
+* Modulation
+
+Zhepei Xu, A18077225:
+* Convolution
+* Wave Object Class
 
 ## Writeup:
 The writeup is located [here](https://docs.google.com/document/d/e/2PACX-1vQbeLiGtcSWIh8PIwu1w4pUH_zetZpARPXDrXkuVdp3Hq1xmoa-urR9AU4SDfVg0yl4pvSMpcZ1zmhr/pub). This will contain a more in detail version of all that is seen here in the README file.
