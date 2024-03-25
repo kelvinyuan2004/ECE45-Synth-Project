@@ -1,6 +1,6 @@
 # MATLAB Final Project for ECE45.
 Overview:
-This is our ECE45 project. The program will be written using MATLAB and will be using the MATLAB GUI as well. It draws heavy inspiration from [Ableton's Digital Synth Playground](https://learningsynths.ableton.com/en/playground)
+This is our ECE45 project. The program will be written using MATLAB and will be using the MATLAB GUI as well. It draws heavy inspiration from [Ableton's Digital Synth Playground](https://learningsynths.ableton.com/en/playground).
 
 ## Contributers and Contributions:
 
