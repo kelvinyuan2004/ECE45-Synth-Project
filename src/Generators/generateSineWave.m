@@ -6,10 +6,7 @@ ref: https://www.mathworks.com/help/dsp/ref/dsp.sinewave-system-object.html
 @param freq - frequency of sin wave (hz); ex. 440 = A4
 @param duration - duration (sec)
 %}
-function sineWave = generateSineWave(amplitude, freq, duration)
-
-    % set default sampling frequency to standard.
-    fs = 44100; 
+function sineWave = generateSineWave(amplitude, freq, duration, fs)
     
     % 0:duration (duration*fs = number of points needed)
     t = linspace(0, duration, fs * duration);
